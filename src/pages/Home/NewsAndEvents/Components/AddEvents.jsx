@@ -12,8 +12,8 @@ const AddEvents =({ handleClose }) => {
   const { currentUser } = useOutletContext();
   const [eventDetails, setEventDetails] = useState("");
   const [eventName, setEventName] = useState("");
-  const [eventStartTime, setEventStartTime] = useState("");
-  const [eventEndTime, setEventEndTime] = useState("");
+  const [eventStartTime, setEventStartTime] = useState(new Date());
+  const [eventEndTime, setEventEndTime] = useState(new Date());
   const [file, setFile] = useState(null);
   const [department, setDepartment] = useState(null);
   const [loading, setLoading] = useState(false);

@@ -1,4 +1,4 @@
-# Vihiga Intranet
+# Intranet System
 
 Welcome to the Intranet project System! 🎉
 
@@ -8,18 +8,18 @@ Intranet is a web application designed to streamline communication and collabora
 
 ## Features
 
+- **Intranet Chat Messaging** : Chat with colleagues in real-time.
 - **News Feed**: Stay up-to-date with the latest company news and announcements.
 - **Employee Directory**: Easily find and connect with colleagues across different departments.
 - **Document Management**: Access important documents and files in a centralized repository.
 - **Task Management**: Assign and track tasks to ensure efficient project management.
 - **Events Calendar**: Keep track of upcoming events and important dates.
-- **Intranet Chat Messaging** : Chat with colleagues in real-time.
 
 ## Getting Started
 
 To get started with this Intranet System, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/Vihiga_Intranet.git`
+1. Clone the repository: `git clone https://github.com/walterayiego/Intranet-System.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm run dev`
 4. Open your browser and navigate to `http://localhost:3000`
