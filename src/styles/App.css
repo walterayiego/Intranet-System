@@ -1,0 +1,116 @@
+#root {
+  width: 100%;
+}
+
+.custom-borders {
+  border-width: 1px;
+  border-color: rgb(31 41 55 / 1);
+}
+
+.chatContainer {
+  padding: 10px;
+  height: 70vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+/* scroll bar x */
+::-webkit-scrollbar {
+  width: 0.25em;
+  height: 0.25em;
+  opacity: 0; /* Hide the scrollbar when not in use */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the scrollbar on hover */
+::-webkit-scrollbar:hover {
+  opacity: 0.6;
+}
+
+/* ::-webkit-scrollbar:horizontal {
+  height: 0.25em;
+} */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #1e1e24;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+/* On thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e1e24;
+  outline: 1px solid slategrey;
+}
+.chatContainer .receiver-chat {
+  @apply flex flex-row bg-blue-950/50 rounded-2xl pt-1;
+}
+.chatContainer .sender-chat {
+  @apply flex flex-row-reverse bg-gray-400/40 place-self-end rounded-2xl pt-1;
+}
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rows-justify-between {
+  @apply flex flex-row justify-between items-center;
+}
+.rows-center {
+  @apply flex flex-row justify-center items-center;
+}
+.row {
+  @apply flex flex-row;
+}
+.col {
+  @apply flex flex-col;
+}
+.cols-center {
+  @apply flex flex-col justify-center items-center;
+}
+.pop-up {
+  @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+   bg-white/25 border-2 border-black shadow-xl p-4 w-1/2 h-1/2 z-10;
+}
+.curved-bottom {
+  @apply w-screen bg-gradient-to-b from-primary/20 to-secondaryLight/40 h-[40vh] scale-x-105 -z-10;
+  border-bottom-left-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+}
+.p-title {
+  @apply text-5xl text-white;
+  font-weight: 400;
+}
+.bg-logo {
+  @apply bg-no-repeat;
+  background-image: url("/assets/VihigaLogo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-blur {
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+}
+.links {
+  @apply sm:m-2 rounded-xl hover:border hover:bg-primary/10 sm:p-3 p-1;
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(105% + 1.3px);
+  height: 191px;
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
