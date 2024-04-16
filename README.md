@@ -5,6 +5,7 @@ Welcome to the Intranet project System! 🎉
 ## Project Overview
 
 Intranet is a web application designed to streamline communication and collaboration within the Vihiga organization. It provides a centralized platform for employees to access important information, share updates, and connect with each other.
+Live view : [Click Here](https://intranet-system.netlify.app/home)
 
 ## Features
 
