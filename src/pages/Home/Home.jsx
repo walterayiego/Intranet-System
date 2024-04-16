@@ -70,7 +70,7 @@ const Home = () => {
     <>
       {!loadingUSERS ? (
         <>
-          <div className="relative row overflow-clip h-[90vh]">
+          <div className="relative row overflow-clip s h-[90vh]">
             <div className="sm:w-[60vw] w-full col ">
               <img
                 src={Logo}
