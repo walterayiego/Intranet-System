@@ -1,15 +1,5 @@
-import React, { useRef } from "react";
-import {
-  Link as LinkScroll,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scroller,
-} from "react-scroll";
-// import Typed from "react-typed";
-import { Link, useNavigate, useOutletContext } from "react-router-dom";
-import PhonelinkIcon from "@mui/icons-material/Phonelink";
-import ChatIcon from "@mui/icons-material/Chat";
+import { Element } from "react-scroll";
+import { useOutletContext } from "react-router-dom";
 import Logo from "/assets/VihigaLogo.png";
 import NewsAndEvents from "./NewsAndEvents/NewsAndEvents";
 import StaffDirectory from "./StaffDirectory";
@@ -21,7 +11,7 @@ import FormsAndTemplates from "./FormsAndTemplates";
 import QuickLinks from "./QuickLinks";
 
 const Home = () => {
-  const {  loadingUSERS } = useOutletContext();
+  const { loadingUSERS } = useOutletContext();
 
   return (
     <>
@@ -36,8 +26,12 @@ const Home = () => {
               />
             </div>
             <div className="z-10 sm:w-[45vw] absolute h-full w-3/4 right-0 bg-slate-800/5 col justify-center -translate-x-[5vw] ">
-              <p className="sm:text-7xl text-3xl font-bold font-">Welcome to our</p>
-              <p className="sm:text-5xl text-2xl font-semibold">Intranet System</p>
+              <p className="sm:text-7xl text-3xl font-bold font-">
+                Welcome to our
+              </p>
+              <p className="sm:text-5xl text-2xl font-semibold">
+                Intranet System
+              </p>
               <div className="text-primary sm:text-2xl text-3xl font-semibold ">
                 <Typewriter
                   options={{
