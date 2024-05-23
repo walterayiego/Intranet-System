@@ -21,51 +21,8 @@ import FormsAndTemplates from "./FormsAndTemplates";
 import QuickLinks from "./QuickLinks";
 
 const Home = () => {
-  const { USERS, loadingUSERS } = useOutletContext();
-  const NewsAndEventsRef = useRef();
-  const StaffDirectoryRef = useRef();
-  const JobRequestsRef = useRef();
-  const navigate = useNavigate();
-  const [state, setState] = React.useState([
-    { text: "Chat", icon: () => <PhonelinkIcon />, link: "/chatpage" },
-    {
-      text: "News & Events",
-      icon: () => <PhonelinkIcon />,
-      link: "NewsAndEvents",
-    },
-    {
-      text: "Staff DIrectory",
-      icon: () => <PhonelinkIcon />,
-      link: "StaffDirectory",
-    },
-    {
-      text: "Job Requests",
-      icon: () => <PhonelinkIcon />,
-      link: "JobRequests",
-    },
-    {
-      text: "News & Events",
-      icon: () => <PhonelinkIcon />,
-      link: "NewsAndEvents",
-    },
-  ]);
+  const {  loadingUSERS } = useOutletContext();
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-  const handleScrollToBottom = () => {
-    StaffDirectoryRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToElement = () => {
-    scroller.scrollTo("JobRequests", {
-      duration: 500,
-      delay: 100,
-      smooth: true,
-      // containerId: 'ContainerElementID',
-      offset: 50, // Scrolls to element + 50 pixels down the page
-    });
-  };
   return (
     <>
       {!loadingUSERS ? (
