@@ -78,7 +78,7 @@ const InboxMessagesSidebar = (props) => {
                       messagesOfThisReceiver={messagesOfThisReceiver}
                     />
                   );
-                }
+                } 
               )
             : null}
         </div>
